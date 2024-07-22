@@ -154,6 +154,30 @@ button:hover {
     box-shadow: 0 4px 16px rgba(0, 123, 255, 0.5);
 }
 
+#otp-input-container {
+    display: none;
+}
+
+.otp-icon {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-100%);
+    width: 40px;
+    height: 20px;
+    background: url('/img/otpIcon.png') no-repeat center center;
+    background-size: contain;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
 @media (max-width: 768px) {
     .center-box {
         flex-direction: column;

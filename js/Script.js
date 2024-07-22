@@ -2,6 +2,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.querySelector('.login-form form');
     const signUpForm = document.querySelector('.sign-up-form form');
     const flipContainer = document.querySelector('.flip-container');
+    const helpButton = document.querySelector('.help-button');
+    const privacyButton = document.querySelector('.info-button');
+    const communityButton = document.querySelector('.more-button');
+    const backButton = document.getElementById('back-button');
+    const modal = document.getElementById('modal');
+    const container = document.querySelector('.container');
+    const helpImage = document.querySelector('.help-image');
+    const privacyImage = document.querySelector('.Privacy-image');
+    const communityImage = document.querySelector('.Community-image');
+
+    // Hide all images initially
+    const hideAllImages = () => {
+        helpImage.style.display = 'none';
+        privacyImage.style.display = 'none';
+        communityImage.style.display = 'none';
+    };
+
+    hideAllImages(); // Initial hiding of images
 
     // Login Form Submission
     loginForm.addEventListener('submit', function(event) {
@@ -31,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-
     const handleFlip = () => {
         if (flipContainer.classList.contains('flip')) {
             flipContainer.classList.remove('flip');
@@ -47,12 +64,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-
     if (window.location.pathname.includes('signup.html')) {
         flipContainer.classList.add('flip');
     } else if (window.location.pathname.includes('login.html')) {
         flipContainer.classList.remove('flip');
     }
+
+    // Modal functionality
+    const showModal = (imageElement) => {
+        hideAllImages();
+        imageElement.style.display = 'block';
+        modal.style.display = 'flex';
+        container.classList.add('blurred');
+    };
+
+    helpButton.addEventListener('click', () => {
+        showModal(helpImage);
+    });
+
+    privacyButton.addEventListener('click', () => {
+        showModal(privacyImage);
+    });
+
+    communityButton.addEventListener('click', () => {
+        showModal(communityImage);
+    });
+
+    backButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+        container.classList.remove('blurred');
+    });
 });
-
-
