@@ -138,13 +138,58 @@ main {
     margin-bottom: 20px;
 }
 
-.explore-products .products {
+.explore-products .products1 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 40px;
+}
+
+.explore-products .products1 img {
+    width: 100px;
+    height: 100px;
+}
+
+.explore-products .products2 {
     display: flex;
     justify-content: center;
     gap: 100px;
 }
 
-.explore-products .products img {
+.explore-products .products2 img {
+    width: 100px;
+    height: 100px;
+}
+
+.explore-products .products3 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.explore-products .products3 img {
+    width: 100px;
+    height: 100px;
+}
+
+.explore-products .products4 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.explore-products .products4 img {
+    width: 100px;
+    height: 100px;
+}
+
+.explore-products .products5 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.explore-products .products5 img {
     width: 100px;
     height: 100px;
 }
@@ -170,68 +215,6 @@ main {
     height: 100px;
 }
 
-
-
-.welcome {
-    margin-top: 40px;
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.welcome .features {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 20px;
-}
-
-.welcome .feature {
-    text-align: center;
-}
-
-.welcome .feature img {
-    width: 50px;
-    height: 50px;
-}
-
-.feedback {
-    margin-top: 40px;
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.feedback h2 {
-    text-align: center;
-}
-
-.feedback-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.feedback-content ul {
-    flex: 1;
-    list-style: none;
-    padding: 0;
-}
-
-.feedback-content ul li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-}
-
-.feedback-content .feedback-image {
-    width: 400px; 
-    height: auto;
-    margin-left: 20px;
-    flex: 1;
-}
-
 footer {
     background-color: #9BB0C1;
     color: #213555;
@@ -246,12 +229,13 @@ footer h1 {
 
 }
 
+
 footer .subscribe {
     margin-top: 20px;
 }
 
 footer .subscribe h3 {
-    font-size: 28px;
+    font-size: 18px;
 }
 
 footer .subscribe p {
