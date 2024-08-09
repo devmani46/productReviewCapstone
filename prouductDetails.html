@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Analysis Report</title>
+    <link rel="stylesheet" href="./css/productDetails.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Product</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">List</a></li>
+                        <li><a href="#">Scheduled</a></li>
+                        <li><a href="#">Comment</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Income</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Refund Request</a></li>
+                        <li><a href="#">Statement</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1>Product Review Analysis Report</h1>
+            <div class="product-section">
+                <div class="image-gallery" id="image-gallery"></div>
+                <div class="product-details">
+                    <h2>Canon DSLR Camera</h2>
+                    <p>⭐ 4.5/5 (30 sold)</p>
+                    <p><strong>Rs. 65,999 /-</strong></p>
+                    <p class="features">
+                        Features:<br>
+                        The Canon DSLR camera boasts high-resolution imaging, advanced autofocus, and various shooting modes to cater to different photography styles...
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./js/productDetails.js"></script>
+</body>
+</html>

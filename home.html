@@ -20,8 +20,12 @@
                     <li><a href="#">Find</a></li>
                 </ul>
                 <div class="nav-icons">
-                    <img src="img/notificationIcon.png" alt="Notification Icon" class="notification-icon">
-                    <img src="img/profileIcon.png" alt="Profile Icon" class="profile-icon">
+                    <button class="icon-button" id="notificationButton">
+                        <img src="img/notificationIcon.png" alt="Notification Icon" class="notification-icon">
+                    </button>
+                    <button class="icon-button" id="profileButton">
+                        <img src="img/profileIcon.png" alt="Profile Icon" class="profile-icon">
+                    </button>
                 </div>
             </nav>
             <div class="header-content">
@@ -44,13 +48,23 @@
             <section class="explore-products">
                 <h2>Explore our Products</h2>
                 <div class="products">
-                    <img src="img/product1.png" alt="Product 1">
-                    <img src="img/product2.png" alt="Product 2">
-                    <img src="img/product3.png" alt="Product 3">
-                    <img src="img/product4.png" alt="Product 4">
-                    <img src="img/product5.png" alt="Product 5">
+                    <div class="product" data-page="/home2.html">
+                        <img src="img/product1.png" alt="Product 1">
+                    </div>
+                    <div class="product" data-page="/home2.html">
+                        <img src="img/product2.png" alt="Product 2">
+                    </div>
+                    <div class="product" data-page="/home2.html">
+                        <img src="img/product3.png" alt="Product 3">
+                    </div>
+                    <div class="product" data-page="/home2.html">
+                        <img src="img/product4.png" alt="Product 4">
+                    </div>
+                    <div class="product" data-page="/home2.html">
+                        <img src="img/product5.png" alt="Product 5">
+                    </div>
                 </div>
-                <a href="#" id="seeMoreProducts">See More Products!</a>
+                <a href="/home2.html" id="seeMoreProducts">See More Products!</a>
                 <div class="additional-products" id="additionalProducts"></div>
             </section>
             
@@ -58,15 +72,15 @@
                 <h2>Welcome to Sentiment Spark!</h2>
                 <p>Our app provides advanced sentiment analysis, product review visualization, and data insights to help you make informed decisions. Explore our features and discover how Sentiment Spark can transform your data into actionable insights.</p>
                 <div class="features">
-                    <div class="feature">
+                    <div class="feature" data-page="sentimentAnalysis.html">
                         <img src="img/SentimentAnalysisIcon.png" alt="Sentiment Analysis">
                         <p>Sentiment Analysis</p>
                     </div>
-                    <div class="feature">
+                    <div class="feature" data-page="visualization.html">
                         <img src="img/VisualizationIcon.png" alt="Product Review Visualization">
                         <p>Product Review Visualization</p>
                     </div>
-                    <div class="feature">
+                    <div class="feature" data-page="dataInsights.html">
                         <img src="img/DataInsightsIcons.png" alt="Data Insights">
                         <p>Data Insights</p>
                     </div>
@@ -83,7 +97,6 @@
                         <li>Tracks Market Trends: Provides insights into emerging trends and user expectations.</li>
                         <li>Supports Decision-Making: Enables businesses to make informed choices using real feedback.</li>
                     </ul>
-                    <img src="img/FeedbackImage.png" alt="Feedback Image" class="feedback-image">
                 </div>
             </section>
         </main>
@@ -124,13 +137,9 @@
             </div>
         </footer>
         <div class="copyright">
-
             <p>&copy; Sentiment Spark! 2024 All Rights Reserved</p>
-    
         </div>
     </div>
-
-
     <script src="js/homeScript.js"></script>
 </body>
 </html>
